@@ -1,4 +1,4 @@
-# HyDRO: Hyperbolic Graph Distillation Framework
+# HyDRO: Hyperbolic Graph Distillation with Random Walk Optimization
 
 ![HyDRO Workflow](images/HyDRO_flow.png)
 
