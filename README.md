@@ -50,10 +50,16 @@ Note: The code automatically handles dataset downloads for:
 |---------------------------|--------------------------------------|
 | `performance_HyRO.sh`     | Main distillation performance on NC tasks|
 | `performance_HyDRO+.sh`  | Main distillation performance on NC tasks|
+
+
+### Tasks Transferability
+| Script                    | Description                          |
+|---------------------------|--------------------------------------|
 | `performance_LP.sh`  |Main distillation performance on LP tasks|
 | `performance_AD.sh`  |Main distillation performance on AD tasks|
 
-### Analysis
+
+### Other Analysis
 | Script             | Description                          |
 |--------------------|--------------------------------------|
 | `nas.sh`           | Neural architecture search           |
