@@ -24,7 +24,7 @@ Built upon the [GraphSlim](https://github.com/Emory-Melody/GraphSlim/tree/main) 
 | Python         | ≥3.8              |
 
 ### Quick Setup
-```bash
+
 # For PyTorch 1.x
 pip install -r requirements_torch1+.txt
 
@@ -36,43 +36,62 @@ pip install torch_scatter torch_sparse -f https://data.pyg.org/whl/torch-${TORCH
 pip install graphslim
 
 
+### Data Download
+
 Note: The code automatically handles dataset downloads for:
 - cora, citeseer, flickr, reddit (via PyG)
 - arxiv (via GraphSAINT)
 - Default dataset path: ../../data
 
-Experiment Scripts
------------------
-The following scripts are available in run/scripts/:
 
-1. Core Experiments:
-   - performance_HyDRO.sh: Runs HyDRO performance benchmarks
-   - performance_HyDRO+.sh: Runs HyDRO+ performance benchmarks
+## 🧪 Experiment Suite
 
-2. Additional Analyses:
-   - robustness.sh: Robustness evaluation
-   - mia.sh: Membership inference attacks evaluation
-   - visual.sh: Visualization distilled graphs
-   - nas.sh: Neural architecture search experiments
-   - graph_property.sh: Evaluates graph property preservation
+### Core Evaluation
+| Script                    | Description                          |
+|---------------------------|--------------------------------------|
+| `performance_HyRO.sh`     | Main distillation performance on NC tasks|
+| `performance_HyDRO+.sh`  | Main distillation performance on NC tasks|
+| `performance_LP.sh`  |Main distillation performance on LP tasks|
+| `performance_AD.sh`  |Main distillation performance on AD tasks|
 
-Citation
---------
-If you use this work, please cite the original papers:
+### Analysis
+| Script             | Description                          |
+|--------------------|--------------------------------------|
+| `nas.sh`           | Neural architecture search           |
+| `robustness.sh`    | Model robustness tests               |
+| `mia_nodes.sh`          | Membership inference attacks on nodes |
+| `mia_links.sh`          | Membership inference attacks on links |
+| `cgl_eval.sh`       | Continuous graph learning evaluation | [GCondenser](https://github.com/superallen13/GCondenser) |
 
+
+### Visualization & Architecture
+| Script          | Description                          |
+|-----------------|--------------------------------------|
+| `visual.sh`    | Graph condensation visualization     |
+
+### Graph Properties
+| Script                | Description                          |
+|-----------------------|--------------------------------------|
+| `graph_property.sh`  | Graph property preservation          |
+
+
+
+
+## 📜 Citation
+
+If you use HyDRO in your research, please cite our papers:
+
+```bibtex
 @article{long2025random,
   title={Random Walk Guided Hyperbolic Graph Distillation},
   author={Long, Yunbo and Xu, Liming and Schoepf, Stefan and Brintrup, Alexandra},
   journal={arXiv preprint arXiv:2501.15696},
   year={2025}
 }
+
 @article{long2025efficient,
   title={Efficient and Privacy-Preserved Link Prediction via Condensed Graphs},
   author={Long, Yunbo and Xu, Liming and Brintrup, Alexandra},
   journal={arXiv preprint arXiv:2503.12156},
   year={2025}
 }
-
-Contact
--------
-For questions or issues, please contact [yl892@cam.ac.uk]
