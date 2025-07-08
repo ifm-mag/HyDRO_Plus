@@ -60,7 +60,7 @@ Note: The code automatically handles dataset downloads for:
 | `robustness.sh`    | Model robustness tests               |
 | `mia_nodes.sh`          | Membership inference attacks on nodes |
 | `mia_links.sh`          | Membership inference attacks on links |
-| `cgl_eval.sh`       | Continuous graph learning evaluation | [GCondenser](https://github.com/superallen13/GCondenser) |
+| `cgl_eval`       | Continuous graph learning evaluation [GCondenser](https://github.com/superallen13/GCondenser) |
 
 
 ### Visualization & Architecture
