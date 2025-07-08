@@ -1,3 +1,6 @@
+#!/bin/bash
+# Experiment Runner for Graph Distillation Methods
+# Usage: ./run_experiments.sh
 for method in  hydro ; do
   for dataset in  cora citeseer flickr pubmed; do
     case $dataset in

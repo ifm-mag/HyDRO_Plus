@@ -1,3 +1,6 @@
+#!/bin/bash
+# Experiment Runner for Graph Distillation Methods
+# Usage: ./run_experiments.sh
 for method in hydro; do
   for dataset in pubmed flickr; do
     for attack in metattack random_adj random_feat; do

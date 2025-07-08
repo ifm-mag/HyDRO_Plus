@@ -38,8 +38,8 @@ if __name__ == '__main__':
     if args.eval_whole:
         # evaluator = PropertyEvaluator(args)
         evaluator = Evaluator(args)
-        evaluator.evaluate(data, reduced=False, model_type='GCN')
-   
+        # evaluator.evaluate(data, reduced=False, model_type='GCN')
+        evaluator.MIA_evaluate_LP(data, reduced=False, model_type='GCN')
     else:
         if args.attack is not None:
             data = attack(data, args)
@@ -47,5 +47,5 @@ if __name__ == '__main__':
         # evaluator = PropertyEvaluator(data, args, reduced=True)
         #evaluator = PropertyEvaluator(args)
         evaluator = Evaluator(args)
-        evaluator.evaluate(data, reduced=True, model_type='GCN')
-
+        # evaluator.evaluate(data, reduced=True, model_type='GCN')
+        evaluator.MIA_evaluate_LP(data, reduced=True, model_type='GCN')

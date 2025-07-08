@@ -1,3 +1,6 @@
+#!/bin/bash
+# Experiment Runner for Graph Distillation Methods
+# Usage: ./run_experiments.sh
 for method in gdem; do
   for dataset in flickr dblp pubmed citeseer; do
     case $dataset in
