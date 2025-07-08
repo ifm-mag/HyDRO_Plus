@@ -1,0 +1,17 @@
+{
+  "lr_feat":1e-3,
+  "lr_adj": 1e-3,
+  "dis_metric": "ours",
+  "beta": 0.5,
+  "weight_decay": 5e-4,
+  "outer_loop": 20,
+  "inner_loop": 15,
+  "condense_model": "SGC",
+  "ntrans": 1,
+  "epochs": 100,
+  "mx_size": 100,
+  "weight_decay_hyper":5e-4,
+  "momentum":0.01,
+  "curvature":0.01,
+  "init":"random"
+}
