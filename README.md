@@ -74,6 +74,21 @@ Note: The code automatically handles dataset downloads for:
 | `graph_property.sh`  | Graph property preservation          |
 
 
+### ✅ To-Do List
+
+- [ ] Commute Time Evaluation  
+  - Compute and analyze commuting time using random walk evaluation on the graph.  
+  - Use this as a baseline metric for downstream tasks.
+
+- [ ] Anomaly Detection (AD) Tasks  
+  - Detect anomalous nodes or edges using commuting time or other structural metrics.  
+  - Evaluate using metrics like AUROC, F1, and precision-recall on labeled and unlabeled data.
+
+- [ ] Link Prediction (LP) Tasks  
+  - Use graph embeddings (possibly influenced by commuting time) to predict missing or future links.  
+  - Evaluate with ROC-AUC and precision at K.  
+  - Explore supervised and unsupervised methods for prediction.
+
 
 
 ## 📜 Citation
