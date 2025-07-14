@@ -1,16 +1,15 @@
-# HyDRO: Hyperbolic Graph Distillation Framework
-![HyDRO Workflow](images/HyDRO_flow.png)
-
+# HyDRO_Plus
+![HyDRO Workflow](images/image.png)
+ 
 ## 📖 Overview
-
-This repository implements two cutting-edge graph distillation methods:
-
-1. **HyDRO**: Random Walk Guided Hyperbolic Graph Distillation  
-   [![Paper](https://img.shields.io/badge/arXiv-2501.15696-b31b1b.svg)](https://arxiv.org/abs/2501.15696)
-
+ 
+HyDRO+ builds upon the original [![HyDRO](https://github.com/Yunbo-max/HyDRO)] framework, with several algorithmic improvements and mathematical enhancements. For more details on the foundational method and additional insights, please refer to our HyDRO paper and GitHub repository.
+ 
+ 
 2. **HyDRO+**: Efficient Privacy-Preserving Link Prediction  
    [![Paper](https://img.shields.io/badge/arXiv-2503.12156-b31b1b.svg)](https://arxiv.org/html/2503.12156v1)
-
+ 
+   
 Built upon the [GraphSlim](https://github.com/Emory-Melody/GraphSlim/tree/main) framework.
 
 ## 🛠️ Installation
