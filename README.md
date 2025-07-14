@@ -1,5 +1,5 @@
 # HyDRO_Plus
-![HyDRO Workflow](images/image.png)
+![HyDRO Workflow](images/hydro_plus.png)
  
 ## 📖 Overview
  
